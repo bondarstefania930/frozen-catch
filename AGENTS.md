@@ -2,6 +2,15 @@
 
 > Главное правило: делать только то, о чём просят. Делать ровно запрошенное — ни больше, ни меньше.
 
+## Rule 0 — only explicitly requested actions
+
+- Perform only the actions that are explicitly named in the current message. Anything else,
+  even an obvious or "helpful" continuation, is out of scope: do not do it — suggest it instead.
+- Builds, commits, pushes, workflow runs/cancels, secrets and other remote or irreversible
+  actions require a direct instruction in the current message. Wording like "make a flow",
+  "prepare", "configure" does NOT authorise running, pushing or triggering anything.
+- If something looks necessary but was not asked for, stop and ask. Never act "just in case".
+
 ## Scope discipline (highest priority)
 
 1. Do exactly what the user asked in the current message — nothing more, nothing less.

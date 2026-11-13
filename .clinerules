@@ -1,3 +1,6 @@
 Do exactly what the user asked in the current message — nothing more, nothing less.
+Perform only actions explicitly named in the current message. Never run builds, commits,
+pushes, workflow runs/cancels, secrets or any other side effect that was not directly asked
+for — suggest it instead and wait for permission.
 See AGENTS.md (mandatory): no unrequested edits, refactors, docs, builds, commits,
 pushes, workflow runs, secrets or other side effects. Ask before doing anything extra.
